@@ -48,14 +48,16 @@ function Customer (firstName, lastName, phoneNumber, userId) {
 
 // user interface
 $(document).ready(function(){
-  $("form#customerOrderSubmit").submit(event())
-    event.preventDefualt();
+  $("#customerOrderSubmit").submit(function(event) {
+    event.preventDefualt()
 
-    var firstName = $("input#firstName").val();
-    var lastName  = $("input#lastName").val();
+    var firstName = ($("#firstName")).val();
+    var lastName  = $("#lastName").val();
     var pizzaSize = $("").val();
     var pizzaToppings = $("").val();
     var pizzaPrice = $("").val();
+    console.log(lastName);
+    console.log(firstName);
 
-  );
+  });
 });
