@@ -1,13 +1,4 @@
-// business logic
-// Define Customer
-function Customer (name, phoneNumber, userId) {
-  this.name = name;
-  this.phoneNumber = phoneNumber;
-  this.userId = userId;
-  }
-  kjkl
 
-  var
 // Main Objectives
  //define what is doing what where how when why
 // Customer name that will print in name area
@@ -16,6 +7,7 @@ function Customer (name, phoneNumber, userId) {
 // Customer price for entire order
 
 // Stretch Goals
+
 
 // Add sides for customer to selection
 // Add option for delivery and pickup
@@ -28,6 +20,23 @@ function Customer (name, phoneNumber, userId) {
 // Add several more language options (Russian, Vietnamese, etc)
 
 
+// business logic
+// Define Customer
+function Customer (name, phoneNumber, userId) {
+  this.name = name;
+  this.phoneNumber = phoneNumber;
+  this.userId = userId;
+  }
+
+  Customer.prototype.name = function (firstName, lastName) {
+    return this.firstName + " " + this.lastName;
+  }
+// Define order
+function Order (orderNumber,orderAmount, pizzaSize, pizzaTopping)
+  Customer.prototype.order = function () {
+    return
+  }
+
 // user interface
 $(document).ready(function(){
   $("form#customerOrderSubmit").submit(event(){
@@ -38,6 +47,6 @@ $(document).ready(function(){
     var pizzaSize = $("").val();
     var pizzaToppings = $("").val();
     var pizzaPrice = $("").val();
-    
+
   });
 });
