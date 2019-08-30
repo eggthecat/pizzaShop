@@ -22,8 +22,9 @@
 
 // business logic
 // Define Customer
-function Customer (name, phoneNumber, userId) {
-  this.name = name;
+function Customer (firstName, lastName, phoneNumber, userId) {
+  this.firstName = firstName;
+  this.lastName = lastName:
   this.phoneNumber = phoneNumber;
   this.userId = userId;
   }
@@ -36,6 +37,7 @@ function Order (orderNumber,orderAmount, pizzaSize, pizzaTopping)
   Customer.prototype.order = function () {
     return
   }
+
 
 // user interface
 $(document).ready(function(){
