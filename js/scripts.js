@@ -1,9 +1,15 @@
 // business logic
-function Order (name, pizzaSize, pizzaToppings, pizzaPrice) {
+// Define Customer
+function Customer (name, phoneNumber, userId) {
+  this.name = name;
+  this.phoneNumber = phoneNumber;
+  this.userId = userId;
+  }
+  kjkl
 
-}
+  var
 // Main Objectives
-
+ //define what is doing what where how when why
 // Customer name that will print in name area
 // Customer pizzaSize selection that will print in size area
 // Customer pizzaToppings selection that will be listed in the toppings area
@@ -27,9 +33,11 @@ $(document).ready(function(){
   $("form#customerOrderSubmit").submit(event(){
     event.preventDefualt();
 
-    var name
-    var pizzaSize
-    var pizzaToppings
-    var pizzaPrice
+    var firstName = $("input#firstName").val();
+    var lastName  = $("input#lastName").val();
+    var pizzaSize = $("").val();
+    var pizzaToppings = $("").val();
+    var pizzaPrice = $("").val();
+    
   });
 });
