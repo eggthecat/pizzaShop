@@ -6,12 +6,14 @@
 //     Create a prototype method for the cost of a pizza depending on the selections chosen.
 
 
-function pizza (size, toppings){
+function Pizza (size, toppings){
   this.size = size,
   this.topping = topping
 }
 
-pizza.prototype.price = (size, topping)
+Pizza.prototype.price = (size, topping);
+  if {
+}
 
 
 
