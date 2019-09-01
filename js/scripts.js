@@ -1,4 +1,16 @@
 // business logic
+
+
+// Allow user to choose toppings and size for pizza order.
+//   Create a pizza object constructor with properties for toppings and size.
+//     Create a prototype method for the cost of a pizza depending on the selections chosen.
+
+
+function pizza (size, toppings){
+
+}
+
+
 // Define Customer
 // function Customer (firstName, lastName, phoneNumber, userId) {
 //   this.firstName = firstName;
@@ -22,6 +34,7 @@
 //   Customer.prototype.order = function () {
 //     return
 //   }
+
 
 
 // user interface
