@@ -11,7 +11,7 @@ function Pizza (size, toppings) {
   this.topping = topping
 
 
-Pizza.prototype.price = function(size, topping);
+Pizza.prototype.price = function(size, topping) {
   if (new size === small) {
   price += 7;
 } else if (new size === medium ) {
