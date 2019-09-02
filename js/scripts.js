@@ -6,13 +6,13 @@
 //     Create a prototype method for the cost of a pizza depending on the selections chosen.
 
 
-function Pizza (size, toppings){
+function Pizza (size, toppings) {
   this.size = size,
   this.topping = topping
-}
+
 
 Pizza.prototype.price = (size, topping);
-  if (new size === small ) {
+  if (new size === small) {
     price =+ 7;
 } else if (new size === medium ) {
     price =+ 9;
@@ -36,7 +36,10 @@ Pizza.prototype.price = (size, topping);
   price =+ 4;
 }  else if (new topping === 9) {
   price =+ 4.5;
-} return pizzaPrice ;
+ }
+
+};
+
 
 
 
@@ -51,7 +54,9 @@ $(document).ready(function(){
 
     var orderPrice = pizzaPrice;
 
-    document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
+
+  //   else {document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
+  // }
 
   });
 });
