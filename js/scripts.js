@@ -12,15 +12,20 @@ function Pizza (size, toppings){
 }
 
 Pizza.prototype.price = (size, topping);
-  if {
-}
+  if (new size === small ) {
+    price =+ 7;
+} else if (new size === medium ) {
+    price =+ 9;
+}  else if (new size === large ) {
+    price =+ 11;
+} 
 
 
 
 
 // user interface
 $(document).ready(function(){
-  $("#orderInput").submit(function(event) {
+  $("form#orderInput").submit(function(event) {
     event.preventDefault()
 
     var pizzaSize = $("").val();
