@@ -18,7 +18,25 @@ Pizza.prototype.price = (size, topping);
     price =+ 9;
 }  else if (new size === large ) {
     price =+ 11;
-} 
+}  else if (new topping === 1) {
+  price =+ 0.5;
+}  else if (new topping === 2) {
+  price =+ 1;
+}  else if (new topping === 3) {
+  price =+ 1.5;
+}  else if (new topping === 4) {
+  price =+ 2;
+}  else if (new topping === 5) {
+  price =+ 2.5;
+}  else if (new topping === 6) {
+  price =+ 3;
+}  else if (new topping === 7) {
+  price =+ 3.5;
+}  else if (new topping === 8) {
+  price =+ 4;
+}  else if (new topping === 9) {
+  price =+ 4.5;
+} return pizzaPrice ;
 
 
 
@@ -30,7 +48,8 @@ $(document).ready(function(){
 
     var pizzaSize = $("").val();
     var pizzaToppings = $("").val();
-    var pizzaPrice = $("").val();
+
+    var orderPrice = pizzaPrice;
 
     document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
 
