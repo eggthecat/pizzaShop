@@ -15,7 +15,7 @@ Pizza.prototype.price = (size, topping);
   if (new size === small) {
     price =+ 7;
 } else if (new size === medium ) {
-    price =+ 9;
+    price += 9;
 }  else if (new size === large ) {
     price =+ 11;
 }  else if (new topping === 1) {
@@ -37,7 +37,8 @@ Pizza.prototype.price = (size, topping);
 }  else if (new topping === 9) {
   price =+ 4.5;
  }
-
+ return this.price
+ console.log(price);
 };
 
 
@@ -49,11 +50,12 @@ $(document).ready(function(){
   $("form#orderInput").submit(function(event) {
     event.preventDefault()
 
-    var pizzaSize = $("").val();
+    var pizzaSize = $("input:radio[name=operator]:checked").val();
+    console.log(operator);
     var pizzaToppings = $("").val();
 
-    var orderPrice = pizzaPrice;
-
+    var orderPrice = price;
+console.log();
 
   //   else {document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
   // }
