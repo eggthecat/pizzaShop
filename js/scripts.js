@@ -11,31 +11,31 @@ function Pizza (size, toppings) {
   this.topping = topping
 
 
-Pizza.prototype.price = (size, topping);
+Pizza.prototype.price = function(size, topping);
   if (new size === small) {
-    price =+ 7;
+  price += 7;
 } else if (new size === medium ) {
-    price += 9;
+  price += 9;
 }  else if (new size === large ) {
-    price =+ 11;
+  price += 11;
 }  else if (new topping === 1) {
-  price =+ 0.5;
+  price += 0.5;
 }  else if (new topping === 2) {
-  price =+ 1;
+  price += 1;
 }  else if (new topping === 3) {
-  price =+ 1.5;
+  price += 1.5;
 }  else if (new topping === 4) {
-  price =+ 2;
+  price += 2;
 }  else if (new topping === 5) {
-  price =+ 2.5;
+  price += 2.5;
 }  else if (new topping === 6) {
-  price =+ 3;
+  price += 3;
 }  else if (new topping === 7) {
-  price =+ 3.5;
+  price += 3.5;
 }  else if (new topping === 8) {
-  price =+ 4;
+  price += 4;
 }  else if (new topping === 9) {
-  price =+ 4.5;
+  price += 4.5;
  }
  return this.price
  console.log(price);
@@ -51,11 +51,9 @@ $(document).ready(function(){
     event.preventDefault()
 
     var pizzaSize = $("input:radio[name=operator]:checked").val();
-    console.log(operator);
+    console.log(pizzaSize);
     var pizzaToppings = $("").val();
 
-    var orderPrice = price;
-console.log();
 
   //   else {document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
   // }
