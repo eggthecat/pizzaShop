@@ -1,17 +1,62 @@
+/* body styling */
+body {
+  background-image: url(https://d3r6kbofdnmd8.cloudfront.net/media/catalog/product/cache/image/1536x/a4e40ebdc3e371adff845072e1c73f37/1/0/101791_dom-perignon_oenoteque_P2_2000_750.jpg);
+}
+
+li {
+  list-style: none;
+}
+/* Div.constainer styling */
+h1  {
+  font-size: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Single Day', cursive;
+  color: darkred;
+  opacity: 90%;
+  text-align: center;
+}
+
+h3  {
+  font-family: 'Forum', cursive;
+  color: darkorange;
+  opacity: 90%;
+}
+
+h4  {
+  font-family: 'Single Day', cursive;
+  color: darkorange;
+  opacity: 85%;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Single Day', cursive;
+  color: darkred;
+  opacity: 85%;
+  text-align: center;
+}
+
 /* Form#orderInput styling */
 .pizzaSizeRadioSelection {
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  border-width: thin;
-  border-color: black;
+  font-family: 'Bangers', cursive;
+  text-align: left;
+  font-size: 20px;
 }
 
 .pizzaSizeRadioSelection p {
-  text-align: center;
   font-size: 30px;
-  padding: 20px;
-  border-width: thin;
-  border-color: black;
+}
+.pizzaToppingsCheckboxSelection {
+  font-family: 'Bangers', cursive;
+  text-align: left;
+  font-size: 20px;
+}
 
+.pizzaToppingsCheckboxSelection p {
+  font-size: 30px;
+}
+
+#toppingsSmallPrint {
+  font-size: 15px;
 }
