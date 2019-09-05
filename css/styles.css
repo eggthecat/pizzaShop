@@ -1,0 +1,17 @@
+/* Form#orderInput styling */
+.pizzaSizeRadioSelection {
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  border-width: thin;
+  border-color: black;
+}
+
+.pizzaSizeRadioSelection p {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border-width: thin;
+  border-color: black;
+
+}
