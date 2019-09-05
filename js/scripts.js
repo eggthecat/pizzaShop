@@ -45,6 +45,7 @@
 
 
 
+
 // user interface
 $(document).ready(function(){
   $("form#orderInput").submit(function(event) {
@@ -52,8 +53,9 @@ $(document).ready(function(){
 
     var pizzaSize = $("input:radio[name=size]:checked").val();
     console.log(pizzaSize);
-    var pizzaToppings = $("").val();
-
+    var pizzaToppings = $("input:checkbox[name=topping]:checked").val();
+    console.log(pizzaToppings);
+// unable to log multiple boxes; only first box shows @ 01:58 9/5
 
   //   else {document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
   // }
