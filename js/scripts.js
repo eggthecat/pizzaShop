@@ -46,7 +46,7 @@ $(document).ready(function(){
     var pizza = new Pizza(pizzaSize, toppingsSelected);
     pizza.itemPrice();
 
-    $("#result").text(pizza.cost);
+    $("#result").text("You have ordered a " + pizza.size + " pizza with " + pizza.toppings + " for a total of " + pizza.cost + " dollars.");
 
     console.log(pizzaSize);
     console.log(pizza.cost);
