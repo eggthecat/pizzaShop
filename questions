@@ -8,3 +8,5 @@ return this.cost = price;
 
 
 It kept multiplying what it added to by the count of the length
+
+ref: https://stackoverflow.com/questions/15110437/how-can-get-length-on-checked-checkbox-array-javascript

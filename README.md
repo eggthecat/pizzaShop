@@ -25,6 +25,8 @@
 
 Please message through github.
 
+questions file: contains questions during project.
+
 ## Technologies Used
 
 HTML, CSS, Javascript
