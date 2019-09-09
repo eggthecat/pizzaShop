@@ -1,0 +1,10 @@
+Why didn't this work as planned?
+
+for (var i = 0; i < this.toppings.length-1; i++){
+  price += this.toppings.length * 0.5;
+}
+return this.cost = price;
+};
+
+
+It kept multiplying what it added to by the count of the length
