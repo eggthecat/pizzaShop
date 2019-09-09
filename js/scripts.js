@@ -1,46 +1,33 @@
 // // business logic
-//
-//
-// // Allow user to choose toppings and size for pizza order.
-// //   Create a pizza object constructor with properties for toppings and size.
-// //     Create a prototype method for the cost of a pizza depending on the selections chosen.
-//
-//
-// function Pizza (size, toppings) {
-//   this.size = size,
-//   this.topping = topping
-//
-//
-// Pizza.prototype.price = function(size, topping) {
-//   if (new size === small) {
-//   price += 7;
-// } else if (new size === medium ) {
-//   price += 9;
-// }  else if (new size === large ) {
-//   price += 11;
-// }  else if (new topping === 1) {
-//   price += 0.5;
-// }  else if (new topping === 2) {
-//   price += 1;
-// }  else if (new topping === 3) {
-//   price += 1.5;
-// }  else if (new topping === 4) {
-//   price += 2;
-// }  else if (new topping === 5) {
-//   price += 2.5;
-// }  else if (new topping === 6) {
-//   price += 3;
-// }  else if (new topping === 7) {
-//   price += 3.5;
-// }  else if (new topping === 8) {
-//   price += 4;
-// }  else if (new topping === 9) {
-//   price += 4.5;
-//  }
-//  return this.price
-//  console.log(price);
-// };
+function Pizza (size, toppings) {
+  this.size = size,
+  this.toppings = toppings
+}
 
+Pizza.prototype.itemPrice = function(size, toppings) {
+  var price = 0;
+  if (this.size === "small") {
+  price += 5;
+} else if (this.size === "medium" ) {
+  price += 9;
+}  else if (this.size === "large" ) {
+  price += 13;
+ }
+for (var i = 0; i < this.toppings.length; i++){
+  if(this.toppings.length === 1) {
+    price +=0.5;
+  } else if (this.toppings.length === 2) {
+    price +=0.5;
+  } else if (this.toppings.length === 3) {
+    price +=0.5;
+  }else if (this.toppings.length === 4) {
+    price +=0,5;
+  }else if (this.toppings.length === 5) {
+    price +=0.5;
+  }
+}
+ return this.cost = price;
+};
 
 
 
@@ -49,13 +36,22 @@
 // user interface
 $(document).ready(function(){
   $("form#orderInput").submit(function(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     var pizzaSize = $("input:radio[name=size]:checked").val();
+    var toppingsSelected = [];
+    $("input:checkbox[name=topping]:checked").each(function(){
+      toppingsSelected.push($(this).val());
+    });
+    var pizza = new Pizza(pizzaSize, toppingsSelected);
+    pizza.itemPrice();
+
+    $("#result").text(pizza.cost);
+
     console.log(pizzaSize);
-    var pizzaToppings = $("input:checkbox[name=topping]:checked").val();
-    console.log(pizzaToppings);
-// unable to log multiple boxes; only first box shows @ 01:58 9/5
+    console.log(pizza.cost);
+    console.log(pizza.toppings);
+
 
   //   else {document.getElementById("result").innerHTML = "Your " + pizzaSize + "pizza with " + pizzaToppings + "will be " + pizzaPrice";
   // }
